@@ -1,0 +1,42 @@
+body {
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.cartao {
+  background-color: #ffffff;
+  border: 2px solid #4a90e2;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  /* --- TESTE MUDAR ESTES VALORES --- */
+  width: 260px;          /* Experimente mudar para 200px ou 320px */
+  height: 200px;         /* Experimente mudar para 250px ou auto */
+  padding: 15px 25px;    /* Experimente mudar para 30px ou 10px 40px */
+}
+
+.cartao h2 {
+  color: #333333;
+  margin-top: 0;
+}
+
+.cartao p {
+  color: #666666;
+  font-size: 14px;
+}
+
+.cartao button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}

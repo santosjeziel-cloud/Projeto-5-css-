@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartão Interativo</title>
+  <style>
+    body {
+      background-color: #1e1e2f;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .cartao {
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      transition: transform 0.2s ease;
+
+      /* --- MUDE ESTES VALORES PARA TESTAR O DESAFIO --- */
+      width: 260px;          /* Teste: 200px ou 320px */
+      height: 220px;         /* Teste: 200px ou 280px */
+      padding: 15px 25px;    /* Teste: 30px ou 10px 40px */
+    }
+
+    /* Efeito quando passa o mouse por cima do cartão */
+    .cartao:hover {
+      transform: translateY(-5px);
+    }
+
+    .cartao h2 {
+      color: #2b2b40;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .cartao p {
+      color: #555555;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .cartao button {
+      background-color: #6c63ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background-color 0.2s;
+    }
+
+    .cartao button:hover {
+      background-color: #554ee0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cartao">
+    <h2>Olá, Mundo! 🚀</h2>
+    <p>Altere os valores de <strong>width</strong>, <strong>height</strong> e <strong>padding</strong> no código para ver este cartão mudar de forma!</p>
+    <button onclick="alert('Funcionou! Você clicou no botão do cartão.')">Testar Clique</button>
+  </div>
+
+</body>
+</html>
